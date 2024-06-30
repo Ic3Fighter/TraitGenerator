@@ -8,7 +8,7 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        System.Console.WriteLine("Loading Traits Generator");
+        System.Console.WriteLine("Loading Traits Generator" + Environment.NewLine);
 
         // create principal trait
         var principalTrait = new PrincipalTrait()

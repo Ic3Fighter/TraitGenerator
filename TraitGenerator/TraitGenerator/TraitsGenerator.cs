@@ -29,7 +29,6 @@ public class TraitsGenerator
 
         // check probability sum
         var probabilitySum = trait.Values.SelectMany(x => x.Value).Sum(x => x.Probability);
-        Console.WriteLine("Probability sum " + probabilitySum);
         if (probabilitySum < .999) // TODO might include tolerance for equality check
         {
             throw new ArgumentOutOfRangeException(nameof(TraitValue.Probability),
